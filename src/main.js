@@ -3,6 +3,11 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 
+import '@js/font.js'
+import '@js/axios.config.js'
+import '@js/filter.js'
+import '@js/isIphoneX.js'
+
 Vue.config.productionTip = false
 
 new Vue({

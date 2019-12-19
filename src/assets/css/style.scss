@@ -1,0 +1,80 @@
+@import './rem.scss';
+@import './color.scss';
+@import './reset';
+.text-line-two {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+}
+
+.z-index-max {
+    z-index: 2;
+}
+
+.z-index-2 {
+    z-index: 2;
+}
+
+.caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-top: px2rem(8) solid $mainColor;
+    border-left: px2rem(6) solid transparent;
+    border-right: px2rem(6) solid transparent;
+}
+
+.cover {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.single-row-text {
+    overflow: hidden;
+    text-overflow: norwarp;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.page-commit {
+    width: 90%;
+    height: px2rem(46);
+    line-height: px2rem(46);
+    margin-left: 5%;
+    display: block;
+    background-color: $mainColor;
+    border-radius: px2rem(50);
+    font-size: $titleSize;
+    color: #fff;
+    text-align: center;
+}
+
+.input-container {
+    height: px2rem(48);
+    padding: $marginSize;
+    overflow: hidden;
+    margin-top: $marginSize;
+    background-color: #fff;
+    border-bottom: 1px solid $lineColor;
+    box-sizing: border-box;
+    input {
+        width: 100%;
+        height: 100%;
+        font-size: $titleSize;
+        outline: none;
+        border: none;
+    }
+}
+
+.iphonex-top {
+    padding-top: 44px;
+}
+
+.iphonex-bottom {
+    padding-bottom: 34px;
+}
